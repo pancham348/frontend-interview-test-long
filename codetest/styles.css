@@ -20,7 +20,6 @@ body{
 	
 	font-size: 13px;
 	min-width: 800px;
-	
 }
 
 br{
@@ -128,11 +127,13 @@ br{
 .post-content{
 	display: table-cell;
 	vertical-align: top;
+	padding-left: 2%;
+	min-width: 500px;
 }
 
-.comments{
+.post-comments{
 	display: table;
-	width: 80%;
+	width: 95%;
 	list-style: none;
 	padding-left:0;
 	background-color: #EDEDED;
@@ -146,6 +147,7 @@ br{
 .comment-content{
 	display: table-cell;
 	vertical-align: top;
+	padding-left: 2%;
 }
 
 .username{
@@ -159,6 +161,14 @@ br{
 }
 
 .comment-input{
-	width: 90%;
+	margin: 1.5%;
+	min-width: 95%;
 	align:center;
+}
+
+.comments{
+	padding-top: 3%;
+	padding-bottom: 2%;
+	margin-left: 2%;
+	border-bottom:1px solid lightgrey;
 }

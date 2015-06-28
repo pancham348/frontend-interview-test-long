@@ -25,7 +25,7 @@
 	<div id="page" ng-controller="PostListCtrl">
 		<!-- <div ng-view class="view-frame"></div> -->
 		<div id="profile-pic" ng-controller="UserCtrl">
-			<img src={{users[4].pic}}></img>
+			<img ng-src="{{users[4].pic}}"></img>
 			{{users[4].username}}
 		</div>
 		<ul id="updates">
@@ -38,9 +38,9 @@
 					  </div>
 						<div class="post-content">
 							<span class="username">{{users[post.userId - 1].username}}</span><br>
-			      	<span>{{post.content}}</span>
-							<ul class="comments">
-								<li ng-repeat="comment in post.comments" value="{{post}}">
+			      	<span>{{post.content}}</span><br>
+							<ul class="post-comments">
+								<li class="comments" ng-repeat="comment in post.comments" value="{{post}}">
 									<div class="comment-user">
 							    	<img class="comment-pic" ng-src="{{users[comment.userId - 1].pic}}"></img>
 									</div>
@@ -56,7 +56,7 @@
 		</ul>
 	</div>
 	
-	<div>
+	<div id="footer">
 		<p>This is a footer mesage</p>
 	</div>
 		
