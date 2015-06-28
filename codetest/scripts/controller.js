@@ -22,5 +22,7 @@ networkApp.controller('UserCtrl', function ($scope, $http) {
     $scope.users = data;
   });
 
-  // $scope.orderProp = 'age';
+  $scope.calcId = function(id){
+  	$scope.adjustedId = id - 1;
+  };
 });

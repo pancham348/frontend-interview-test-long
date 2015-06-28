@@ -117,17 +117,48 @@ br{
 .posts{
 	display: table;
 	list-style: none;
+	margin-bottom: 5%;
 }
 
-.posts img{
+.post-user{
 	display: table-cell;
+	vertical-align: top;
 }
 
 .post-content{
 	display: table-cell;
+	vertical-align: top;
 }
 
 .comments{
 	display: table;
+	width: 80%;
 	list-style: none;
+	padding-left:0;
+	background-color: #EDEDED;
+}
+
+.comment-user{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.comment-content{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.username{
+	font-style: bold;
+	color: #0279C9;
+}
+
+.comment-pic{
+	width:25px;
+	height:25px;
+}
+
+.comment-input{
+	width: 90%;
+	align:center;
 }

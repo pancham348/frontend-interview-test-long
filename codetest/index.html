@@ -28,15 +28,30 @@
 			<img src={{users[4].pic}}></img>
 			{{users[4].username}}
 		</div>
-		<ul id="updates">Updates
+		<ul id="updates">
+			<div class="post-user">
+	    	Updates
+		  </div>
 			<li class="posts" ng-repeat="post in posts" ng-controller="UserCtrl">
-				    <img src={{users[post.userId].pic}}></img>
-			      <p class="post-content">{{post.content}}</p>
-						<ul class="comments">
-							<li ng-repeat="comment in post.comments" value="{{post}}">
-								<span>{{comment.content}}</span>
-							</li>
-						</ul>
+						<div class="post-user">
+				    	<img ng-src="{{users[post.userId - 1].pic}}"></img>
+					  </div>
+						<div class="post-content">
+							<span class="username">{{users[post.userId - 1].username}}</span><br>
+			      	<span>{{post.content}}</span>
+							<ul class="comments">
+								<li ng-repeat="comment in post.comments" value="{{post}}">
+									<div class="comment-user">
+							    	<img class="comment-pic" ng-src="{{users[comment.userId - 1].pic}}"></img>
+									</div>
+									<div class="comment-content">
+									  <span class="username">{{users[comment.userId - 1].username}}</span><br>
+										<span>{{comment.content}}</span>
+									</div>
+								</li>
+								<input class="comment-input" type="text" placeholder="post a comment"></input>
+							</ul>
+						</div>
 			</li>
 		</ul>
 	</div>
