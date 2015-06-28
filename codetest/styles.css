@@ -73,22 +73,61 @@ br{
 }
 
 #search input[type="submit"]:hover{
-	
+
 }
 
 
-
+#header{
+		height: 50px;
+}
 
 
 /*page content*/
 
 #page{
 	width: 800px;
-	
+	display:table;
 	/*background: rgba( 255, 255, 255, 0.3 );
 	border: 1px solid #ffffff;*/
 	margin: 10px auto 0px;
 	padding: 1em 2em;
 }
 
+#updates{
+	display:table-cell;
+	width:70%;
+	background-color: #F7F7F7;
+	margin-left: 5%;
+	border-radius:5px;
+}
 
+#profile-pic{
+	float:left;
+  display: table-cell;
+	width: 90%;
+	background-color: #F7F7F7;
+	border-radius:5px;
+	vertical-align:middle;
+}
+
+#profile-pic img{
+	margin:1%;
+}
+
+.posts{
+	display: table;
+	list-style: none;
+}
+
+.posts img{
+	display: table-cell;
+}
+
+.post-content{
+	display: table-cell;
+}
+
+.comments{
+	display: table;
+	list-style: none;
+}
